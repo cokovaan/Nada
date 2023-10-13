@@ -1,4 +1,3 @@
-
 package Nada_5409;
 
 public class myNumber {
@@ -18,13 +17,13 @@ public class myNumber {
 	int getNum2() {
 		return num2;
 	}
-	
-void description() {
-	System.out.println("The value of num is" this getNum());
-	System.out.println("The value of num2 is" this getNum2());
+	void description() {
+		System.out.println("The value of num is" +  this.getNum());
+		System.out.println("The value of num2 is" +  this.getNum2());
+	}
+	float getAverage() {
+		return (num+num2/2);
 }
-float getAverage() {
-	return (num+num2/2);
 }
 public class myClass {
 	public static void main(String[] args) {
