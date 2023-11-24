@@ -1,0 +1,21 @@
+public class Main {
+	    public static void main(String[] args) {
+	        Test obj = new Test();
+	        System.out.println("Class name: " + obj.getClass().getSimpleName());
+	        System.out.println("Constructor name: " + obj.getClass().getConstructors()[0].getName());
+	        System.out.println("Method names:");
+	        for (Method method : obj.getClass().getDeclaredMethods()) {
+	            System.out.println(method.getName());
+	         }
+	    }
+	}
+	       
+class Test {
+	public Test() {
+	}    
+	public void method1() {
+	}
+	public void method2() {
+	}
+	}
+}
